@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.gpsd.ui.AuthenticationUI">
+   <top>
+      <Label text="Authentication" BorderPane.alignment="BOTTOM_CENTER">
+         <font>
+            <Font name="Georgia Pro Cond" size="50.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="100.0" />
+         </BorderPane.margin></Label>
+   </top>
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="240.0" prefWidth="620.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="429.0" minWidth="10.0" prefWidth="141.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="479.0" minWidth="10.0" prefWidth="479.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="177.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="301.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="301.0" minHeight="10.0" prefHeight="55.0" valignment="TOP" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Email:" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label text="Password:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" promptText="Insert Email" GridPane.columnIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin></TextField>
+            <PasswordField fx:id="txtPassword" prefHeight="50.0" prefWidth="414.0" promptText="Insert Password" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </PasswordField>
+            <Label fx:id="lblError" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <GridPane prefHeight="125.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnLogIn" defaultButton="true" mnemonicParsing="false" onAction="#actionLogIn" text="Log In" textAlignment="CENTER" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="50.0" right="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnBack" mnemonicParsing="false" onAction="#actionBack" text="Back" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>

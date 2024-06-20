@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<executionOrderList>
+    <executionOrder>
+        <number>0</number>
+        <name>strName</name>
+        <distance>0,0</distance>
+        <category>id</category>
+        <serviceType>id</serviceType>
+        <day>2019/12/31</day>
+        <time>15:00</time>
+        <postAddr>add</postAddr>
+        <zip>4000-008</zip>
+        <town>town</town>
+    </executionOrder>
+</executionOrderList>

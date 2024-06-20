@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="301.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.gpsd.ui.AddCategoryUI">
+   <bottom>
+      <Button fx:id="btnAddCategory" defaultButton="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#actionAddCategory" text="Add Category" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="30.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="417.0" text="Add Category" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="40.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <ComboBox fx:id="comboCat" prefHeight="31.0" prefWidth="534.0" promptText="Select Category" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Label fx:id="lblX" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

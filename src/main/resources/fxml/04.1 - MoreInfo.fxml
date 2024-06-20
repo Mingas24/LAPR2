@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="302.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.gpsd.ui.SpecifyServiceMoreUI">
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="417.0" text="Specify Service" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <GridPane prefHeight="73.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnContinue" defaultButton="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#actionContinue" prefHeight="54.0" prefWidth="135.0" text="Continue" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="35.0" right="15.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnBack" mnemonicParsing="false" onAction="#actionBack" prefHeight="54.0" prefWidth="135.0" text="Back" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="35.0" left="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="157.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="150.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="51.0" prefWidth="630.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="344.0" minWidth="10.0" prefWidth="256.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="477.0" minWidth="10.0" prefWidth="374.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="lblExtraInfo" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="21.0" prefWidth="235.0" text="Pre-determined Duration (HH:MM):" GridPane.halignment="RIGHT">
+                     <GridPane.margin>
+                        <Insets right="15.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="txtExtra" prefHeight="31.0" prefWidth="370.0" promptText="Insert Extra Data" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

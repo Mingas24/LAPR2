@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.gpsd.ui.JustificationAndSolutionUI">
+   <children>
+      <Text layoutX="64.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Justification:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="64.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solution:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="txtJust" layoutX="64.0" layoutY="119.0" prefHeight="88.0" prefWidth="538.0" />
+      <TextField fx:id="txtSol" layoutX="64.0" layoutY="256.0" prefHeight="88.0" prefWidth="538.0" />
+      <Text layoutX="138.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Justification and Solution">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnConfirm" defaultButton="true" layoutX="202.0" layoutY="372.0" mnemonicParsing="false" onAction="#actionConfirm" text="Confirm">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="370.0" layoutY="372.0" mnemonicParsing="false" onAction="#actionBack" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.gpsd.ui.SpecifyGeographicalAreaListUI">
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" text="List of ZIP Codes:" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Georgia Pro Cond" size="30.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="60.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <Button fx:id="btnBack" cancelButton="true" defaultButton="true" mnemonicParsing="false" onAction="#actionBack" text="Back" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="35.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <center>
+      <ScrollPane fx:id="listZipCodes" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="364.0" prefWidth="512.0" BorderPane.alignment="CENTER">
+         <content>
+            <Label fx:id="lblInfo">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </content></ScrollPane>
+   </center>
+</BorderPane>

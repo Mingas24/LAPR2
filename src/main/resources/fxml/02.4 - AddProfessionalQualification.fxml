@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.gpsd.ui.AddProfessionalQualificationUI">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="553.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Description:" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextArea fx:id="txtDescription" prefHeight="100.0" prefWidth="425.0" promptText="Insert Description" GridPane.columnIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="10.0" prefWidth="128.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="506.0" minWidth="10.0" prefWidth="425.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </center>
+   <bottom>
+      <Button fx:id="btnAddProfessional" defaultButton="true" mnemonicParsing="false" onAction="#actionAddProfessional" text="Add Professional Qualification" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="40.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="434.0" text="Add Professional Qualification" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>

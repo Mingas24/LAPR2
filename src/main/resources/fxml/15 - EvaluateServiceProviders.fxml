@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="681.0" prefWidth="999.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.gpsd.ui.EvaluateServiceProvidersUI">
+   <children>
+      <Label layoutX="328.0" layoutY="24.0" text="Evaluate Service Providers">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="317.0" layoutY="576.0" prefHeight="77.0" prefWidth="366.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnConfirm" defaultButton="true" mnemonicParsing="false" onAction="#actionConfirm" text="Confirm" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="15.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnCancel" cancelButton="true" mnemonicParsing="false" onAction="#actionCancel" text="Cancel" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#actionEdit" text="Edit Label" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <GridPane layoutX="535.0" layoutY="96.0" prefHeight="294.0" prefWidth="427.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="172.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="90.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblSP" alignment="TOP_LEFT" prefHeight="293.0" prefWidth="181.0" text="SP's" />
+            <Label fx:id="lblRating" alignment="TOP_LEFT" prefHeight="296.0" prefWidth="148.0" text="Rating's" GridPane.columnIndex="1" />
+            <Label fx:id="lblLabels" alignment="TOP_LEFT" prefHeight="294.0" prefWidth="150.0" text="Label's" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <Label fx:id="lblCompanyMean" layoutX="37.0" layoutY="546.0" text="Company Mean Rating:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Pane fx:id="pane" layoutX="31.0" layoutY="96.0" prefHeight="358.0" prefWidth="427.0" />
+   </children>
+</AnchorPane>

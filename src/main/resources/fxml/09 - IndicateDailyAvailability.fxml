@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.gpsd.ui.IndicateDailyAvailabilityUI">
+   <children>
+      <Label alignment="CENTER" layoutX="165.0" layoutY="44.0" prefHeight="32.0" prefWidth="571.0" text="INDICATE DAILY AVAILABILITY">
+         <font>
+            <Font name="Georgia Pro Cond Bold" size="35.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="initDate" layoutX="111.0" layoutY="183.0" prefHeight="32.0" prefWidth="259.0" />
+      <Button fx:id="buttonAdd" defaultButton="true" layoutX="589.0" layoutY="206.0" mnemonicParsing="false" onAction="#actionAdd" prefHeight="39.0" prefWidth="182.0" text="Add" />
+      <ComboBox fx:id="initTime" layoutX="412.0" layoutY="184.0" prefHeight="31.0" prefWidth="119.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+            <String fx:value="08:00" />
+            <String fx:value="08:30" />
+            <String fx:value="09:00" />
+            <String fx:value="09:30" />
+            <String fx:value="10:00" />
+            <String fx:value="10:30" />
+            <String fx:value="11:00" />
+            <String fx:value="11:30" />
+            <String fx:value="12:00" />
+            <String fx:value="12:30" />
+            <String fx:value="13:00" />
+            <String fx:value="13:30" />
+            <String fx:value="14:00" />
+            <String fx:value="14:30" />
+            <String fx:value="15:00" />
+            <String fx:value="15:30" />
+            <String fx:value="16:00" />
+            <String fx:value="16:30" />
+            <String fx:value="17:00" />
+            <String fx:value="17:30" />
+            <String fx:value="18:00" />
+            </FXCollections>
+        </items>
+      </ComboBox> 
+      <Label layoutX="412.0" layoutY="162.0" text="Initial Time:" />
+      <Label layoutX="412.0" layoutY="226.0" text="End Time:" />
+      <ComboBox fx:id="endTime" layoutX="412.0" layoutY="248.0" prefHeight="31.0" prefWidth="119.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+            <String fx:value="08:00" />
+            <String fx:value="08:30" />
+            <String fx:value="09:00" />
+            <String fx:value="09:30" />
+            <String fx:value="10:00" />
+            <String fx:value="10:30" />
+            <String fx:value="11:00" />
+            <String fx:value="11:30" />
+            <String fx:value="12:00" />
+            <String fx:value="12:30" />
+            <String fx:value="13:00" />
+            <String fx:value="13:30" />
+            <String fx:value="14:00" />
+            <String fx:value="14:30" />
+            <String fx:value="15:00" />
+            <String fx:value="15:30" />
+            <String fx:value="16:00" />
+            <String fx:value="16:30" />
+            <String fx:value="17:00" />
+            <String fx:value="17:30" />
+            <String fx:value="18:00" />
+            </FXCollections>
+        </items>
+      </ComboBox> 
+      <Button fx:id="btnExit" cancelButton="true" layoutX="757.0" layoutY="380.0" mnemonicParsing="false" onAction="#actionExit" prefHeight="41.0" prefWidth="85.0" text="Exit">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnFinish" defaultButton="true" layoutX="402.0" layoutY="378.0" mnemonicParsing="false" onAction="#actionFinish" text="Finish">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="111.0" layoutY="162.0" text="Initial Date:" />
+      <DatePicker fx:id="endDate" layoutX="111.0" layoutY="247.0" prefHeight="32.0" prefWidth="259.0" />
+      <Label layoutX="111.0" layoutY="226.0" text="End Date:" />
+   </children>
+</AnchorPane>

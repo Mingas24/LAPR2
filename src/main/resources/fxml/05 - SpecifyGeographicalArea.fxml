@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.gpsd.ui.SpecifyGeographicalAreaUI">
+   <top>
+      <Label text="Specify Geographical Area" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Georgia Pro Cond" size="40.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="85.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="359.0" prefWidth="684.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.0" minWidth="10.0" prefWidth="215.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="507.0" minWidth="10.0" prefWidth="469.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Designation:" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="15.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtDesignation" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+            <Label text="ZIP Code:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="15.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Radius:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="15.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Transportation Cost:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="15.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtZipCode" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtRadius" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtTransportationCost" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <GridPane prefHeight="95.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="442.0" minWidth="10.0" prefWidth="442.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="420.0" minWidth="10.0" prefWidth="408.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnContinue" defaultButton="true" mnemonicParsing="false" onAction="#actionContinue" text="Continue" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets bottom="15.0" right="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" cancelButton="true" mnemonicParsing="false" onAction="#actionBack" text="Back" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
